@@ -50,9 +50,6 @@ const Register = () => {
           >
             {loading ? "Loading..." : "Signup"}
           </button>
-
-
-
           {error && <p>Error: {error}</p>}
         </div>
       </div>
