@@ -2,6 +2,7 @@
 import {configureStore} from '@reduxjs/toolkit';
 import authReducer, {refreshToken} from './Slices/authSlice.js';
 import axios from 'axios';
+import commentReducer from "./Slices/commentSlice.js";
 
 export const api = axios.create({
     baseURL: 'https://localhost:8000',
@@ -31,6 +32,7 @@ api.interceptors.response.use(
 const store = configureStore({
     reducer: {
         auth: authReducer,
+        comment: commentReducer
     }
 });
 

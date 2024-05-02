@@ -1,0 +1,1 @@
+export const COMMENT_API = 'https://jsonplaceholder.typicode.com'

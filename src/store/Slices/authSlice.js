@@ -1,11 +1,8 @@
-// authSlice.js
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import axios from 'axios';
 
 
 export const api = 'http://localhost:8000';
-
-console.log(api)
 
 export const signup = createAsyncThunk('auth/register', async ({username, password, email}) => {
     // eslint-disable-next-line no-useless-catch
